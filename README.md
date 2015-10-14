@@ -16,6 +16,8 @@ $ npm install
 
 ## Building Assets:
 $ gulp
+or
+$ gulp watch
 
 ## Running Tests:
 $ npm test
@@ -34,7 +36,7 @@ I could have chosen Grunt over Gulp for the static asset build tasks, however I 
 
 I've decided to minify and concatinate my static assets to keep HTTP requests to a minimum and allow for a faster loading page. Images are also compressed losslessly to further aid in page weight reduction.
 
-My approach to responsiveness is content-first and uses a mobile-first to desktop-last approach in CSS delivery. This allows mobile devices to only load the assets it needs and allows desktop to receive the full experience.
+My approach to responsiveness is content-first and uses a mobile-first to desktop-last approach in CSS delivery. I use breakpoints when the design begins to look bad rather than fixed breakpoints. This allows mobile devices to only load the assets it needs and allows desktop to receive the full experience.
 The property background image is loaded into memory after the core content has been loaded and is then shown with a fade-in transition.
 
 jQuery was selected for some simple event binding and DOM manipulation due to its ease of use and quick implementation time and has good cross-browser support.
