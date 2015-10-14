@@ -16,14 +16,15 @@ $ npm install
 
 ## Building Assets:
 $ gulp
-or
-$ gulp watch
 
 ## Running Tests:
 $ npm test
 
 ## Running Server:
 $ npm start
+
+## Viewing Server:
+Open in a browser: http://127.0.0.1:3000/accomodation/london/my-property
 
 ## Technology Choice:
 I chose Node & Express as the web server technologies due to the simplicity in rapidly getting a development environment and web server up & running allowing me to serve a simple webapp with a couple of routes without much configuration time.
