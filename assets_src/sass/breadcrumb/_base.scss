@@ -1,0 +1,38 @@
+/*
+ * (module) Breadcrumb
+ */
+.m-nav {
+    max-width: 50em;
+    padding: 0.8em 0 0;
+    margin: 0 0 0.8em 0;
+    box-sizing: border-box;
+
+    .nav-items {
+        @include resetList;
+        @include clearfix;
+
+        .nav-item {
+            width: 33.3333%;
+            min-width: 9.9em;
+            float: left;
+            padding: 0 0.2em 0 0;
+            box-sizing: border-box;
+
+            .item-link {
+                display: block;
+                padding: 1.4em 0;
+                text-decoration: none;
+                background: #555;
+                position: relative;
+
+                .item-name {
+                    display: block;
+                    color: #fff;
+                    font-size: 1.4em;
+                    text-align: center;
+                    @include ellipsis;
+                }
+            }
+        }
+    }
+}

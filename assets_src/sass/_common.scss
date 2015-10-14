@@ -1,0 +1,29 @@
+.is-hidden {
+    left: -2500px;
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+}
+@mixin clearfix {
+
+    &:after {
+        clear: both;
+        content: ".";
+        display: block;
+        height: 0;
+        visibility: hidden;
+    }
+}
+
+@mixin resetList {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: block;
+}

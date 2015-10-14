@@ -1,0 +1,29 @@
+.l-page {
+    max-width: 1024px;
+    padding: 0 0.8em;
+    margin: 0 auto;
+}
+
+/*
+ * Generic Header
+ */
+.l-header {
+    width: 100%;
+    padding: 1.6em 0;
+    background: #36373a;
+
+    .header-link {
+        max-width: 1024px;
+        display: block;
+        padding: 0 0.8em;
+        margin: 0 auto;
+
+        .header-logo {
+            width: 60%;
+            min-width: 16em;
+            max-width: 24.9em;
+            height: auto;
+            display: block;
+        }
+    }
+}

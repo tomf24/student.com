@@ -1,0 +1,10 @@
+#!/usr/bin/env node
+
+// This file requires: $ chmod a+x
+
+var app = require('./../app');
+
+var server = app.listen(3000, function() {
+    console.log('Student.com [running] %s:%d', server.address().address, server.address().port);
+});
+

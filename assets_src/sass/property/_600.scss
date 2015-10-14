@@ -1,0 +1,42 @@
+@media screen and (min-width: 600px) {
+
+    .m-property {
+
+        .property-header {
+            padding: 12em 1.6em 4.8em 1.6em;
+        }
+
+        .property-details {
+
+            .property-rating {
+                padding: 0 1.6em;
+            }
+
+            .property-beds {
+                padding: 0 1.6em;
+            }
+        }
+
+        .property-description {
+            padding: 0 1em;
+        }
+
+        > .property-contact {
+            margin: 0 1.1428em 2.2857em 1.1428em;
+        }
+
+        .property-rooms {
+            padding: 0 1.6em;
+        }
+
+        .m-room {
+
+            .room-facilities {
+
+                .facilities-item {
+                    width: 33.3333%;
+                }
+            }
+        }
+    }
+}

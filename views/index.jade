@@ -1,0 +1,56 @@
+extends ./layout.jade
+
+block title
+    title!=property.name + " - Student.com"
+
+block content
+    div(class="l-page")
+        nav(class="m-nav")
+            ul(class="nav-items")
+                li(class="nav-item")
+                    a(class="item-link", href="/")
+                        span(class="item-name") Home
+                li(class="nav-item")
+                    a(class="item-link", href="/london")
+                        span(class="item-name") London
+                li(class="nav-item")
+                    a(class="item-link", href="/")
+                        span(class="item-name") #{property.name}
+
+        section(class="m-properties")
+            article(class="m-property")
+                header(id="property-header", class="property-header")
+                    h1(class="property-name") #{property.address1}
+                    h2(class="property-address") #{property.address2}, #{property.postcode}
+                aside(class="property-details")
+                    div(class="property-rating")
+                        p(class="rating-info") Rated Average of #[em #{property.ratings_average}] by #[em #{property.ratings_count}] students
+                    div(class="property-beds")
+                        p(class="beds-info") #[em #{property.beds_count}] Total beds
+                    a(class="property-contact", href="mailto:contact@student.com?subject=Contact Expert") Contact an expert
+                p(class="property-description") #{property.description}
+                a(class="property-contact", href="mailto:contact@student.com?subject=Contact Expert") Contact an expert
+                div(class="property-rooms")
+                    h2(class="rooms-name") Room Types
+                    select(id="select-room", class="rooms-list")
+                        each room in property.rooms
+                            option(value="room-" + room.id) #{room.name}
+                    div(id="rooms", class="m-room")
+                        each room in property.rooms
+                            div(id="room-" + room.id, class="l-room")
+                                h3(class="room-name") #{room.name}
+                                p(class="room-description") #{room.description}
+                                p(class="room-info") #{room.info}
+                                p(class="room-friends") #{room.friends_message}
+                                h3(class="room-name") Facilities
+                                ul(class="room-facilities")
+                                    each facility in room.facilities
+                                        li(class="facilities-item")
+                                            span(class="item-name") #{facility}
+
+
+
+
+
+
+

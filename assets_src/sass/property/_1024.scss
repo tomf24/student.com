@@ -1,0 +1,58 @@
+@media screen and (min-width: 1024px) {
+
+    .m-property {
+
+        .property-header {
+            padding-bottom: 12em;
+        }
+
+        > .property-contact {
+            display: none;
+            margin-bottom: 1.6em;
+        }
+
+        .property-description {
+            width: 75%;
+            float: left;
+            box-sizing: border-box;
+        }
+
+        .property-details {
+            width: 25%;
+            float: right;
+            padding-right: 0.8em;
+            box-sizing: border-box;
+
+            .property-contact {
+                display: block;
+            }
+        }
+
+        .property-rooms {
+            clear: both;
+
+            .rooms-name {
+                width: 25%;
+                float: left;
+            }
+
+            .rooms-list {
+                width: 20%;
+                float: left;
+                clear: left;
+            }
+
+            .m-room {
+                width: 75%;
+                float: right;
+
+                .room-facilities {
+
+                    .facilities-item {
+                        width: 25%;
+                    }
+                }
+            }
+        }
+    }
+}
